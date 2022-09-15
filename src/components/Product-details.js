@@ -25,7 +25,6 @@ export default function ProductDetails() {
                 dispatch(selectProduct(res.data));
             }).catch(err => console.log('Error:', err));
         };
-        //return () => { dispatch(removeSelectedProduct()); }
     }, [id, dispatch]);
 
     console.log(item, { id });
